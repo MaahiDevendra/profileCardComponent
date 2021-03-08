@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Kumbh sans, sans-serif;
+    color: hsl(0, 0%, 59%);
+}
+
+.wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background-position: -20em -34em, 40.5em 21em;
+    background-color: hsl(185, 75%, 39%);
+    background-image: url("../assets/bg-pattern-top.svg"), url("../assets/bg-pattern-bottom.svg");
+    background-repeat: no-repeat;
+}
+
+main {
+    margin-top: 9em;
+}
+
+.wrapper .profile-card {
+    width: 21em;
+    height: 22em;
+    border-radius: .8em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    background-image: url("../assets/bg-pattern-card.svg");
+    background-size: 20.5em ;
+    background-repeat: repeat-x;
+    box-shadow: 0 2em 5em hsla(227, 10%, 46%, 0.5);
+}
+
+.profile-card img {
+    border-radius: 50%;
+    width: 5.6em;
+    margin-top: 5em;
+    border: .4em solid #fff;
+}
+
+.card-header {
+    text-align: center;
+    margin-top: 1.5em;
+}
+
+.country {
+    display: block;
+}
+
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 1.2em;
+    padding: 1.2em;
+    margin-top: 1.5em;
+    box-sizing: border-box;
+    border-top: 1px solid #ddd;
+}
+
+.card-footer div {
+    text-transform: uppercase;
+}
+
+.age {
+    margin-left: 5px;
+}
+
+.card-footer div , .name {
+    font-weight: 700;
+    font-size: 1.1em;
+    color: hsl(229, 23%, 23%);
+}
+
+.card-footer span {
+    font-size: .55em;
+    text-transform: none;
+    font-weight: normal;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: .15em;
+}
+
+.country {
+    font-size: .8em;
+    margin-top: 1em;
+}
+
+.card-footer span {
+    display: block;
+}
+
+footer {
+    color: #000;
+    font-size: .8em;
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+a {
+    color: #000;
+}
+
+.heart {
+    color: #f00;
+}
+
+@media only screen and (max-width : 375px) {
+    .wrapper {
+        background-position: -47em -40em, 10.5em 11em;
+    }
+
+    .wrapper .profile-card {
+        width: 85vw;
+    }
+
+    main {
+        margin-top: 6.5em;
+    }
+}
